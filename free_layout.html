@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>National Geographic</title>
+        <meta charset="utf-8"/>
+        <style>
+            body{
+                background-color: black;
+                color:white;
+            }
+           nav h1>img{
+                width: 150px;
+                height: 50px;
+            }
+
+            
+            header{
+               
+               color: white;
+               padding: 10px 10px; /*상하 좌우*/
+           }
+            header ul>li{
+                float:left; /*둥둥떠다니게 :왼쪽기준 */
+                list-style:none; /*목록-모습(동그라미): 없음*/
+                padding-left:10px; /* 내부 여백-왼쪽:10px*/
+                padding-right:10px;/* 내부 여백-오른쪽:10px*/
+                border-right:solid 2px rgb(255, 213, 62);
+                /*경계선-오른쪽:실선 1px 두께 회색*/
+                color: white ;
+                }
+                header>ul>li:nth-child(5){
+                    border:none; /*경계선: 없음*/
+                }
+                header>ul>li>a{
+                color:white;
+                text-decoration: none;
+            }
+                
+            nav li{
+                float: left;
+                list-style: none;
+                padding-left: 10px;
+                padding-right: 10px;
+                color: white ;
+                border-right:solid 2px rgb(255, 213, 62);
+                /*경계선-오른쪽:실선 1px 두께 회색*/
+                color: white ;
+                }
+                nav>ul>li:nth-child(7){
+                    border:none; /*경계선: 없음*/
+                }
+                
+            nav>h1{
+                margin: 0px;
+            }
+            nav>ul{
+                margin: 8px;
+            }
+            nav{
+                padding:10px 50px;
+            }
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }
+            .clear{
+                clear:both; /*지우다: 양쪽*/
+                height: 0px;/* 높이: 0px*/
+                overflow: hidden; /*넘쳤을때: 숨김*/
+            }
+            .content_part{
+                float: left;
+                
+                margin: 20px;
+            }
+            
+            #content {
+                color:white;
+            }
+            /* . = class
+            # = id*/
+            h2,h3,h6{
+                color: rgb(255, 213, 62);
+                font-size: 50px;
+                font-weight: normal;
+                margin: 30px 0px;
+                border-left:solid 3px rgb(255, 213, 62);
+                padding: 10px 50px;
+             
+            }
+            h5{
+                font-size: 50px;
+            }
+         
+            dl{
+                font-size: 30px;
+                letter-spacing: 1px;
+                
+                
+                
+            }
+            dl>p{
+                font-size: 20px;
+                padding: 1px 40px;
+                
+            }
+          
+
+            .content_part dl{
+                padding:  10px;
+            }
+
+            table {
+                border-spacing: 30px;
+                border-collapse: separate;
+               
+                }
+            
+            img { display: block; margin: 0px auto; }
+           
+            footer{
+                
+                color: #ccc;
+
+                padding: 10px 50px;
+            }
+           
+            footer>div>ul>li{
+                float:left;
+                list-style: none;
+                padding:0px 10px; /* 상하 좌우 */
+
+                border-right: solid 2px gray;
+            }
+            footer>div>ul>li:nth-child(5){
+                border:none;
+            }
+            footer>div>ul{
+                padding:0px;
+            }
+            footer>ul>li{
+                float:left;
+                list-style: none;
+                padding:0px 10px;/*상하 좌우*/
+            }
+            footer>ul{
+                padding:0px;
+            }
+            #footer_left{
+                float: left;
+            }
+            #footer_right{
+                float: right;
+            }
+         
+            
+           
+        </style>
+        </head>
+
+        <body>
+          
+            <div id="wrap">
+                    <header>
+                      
+                        <ul>
+                            <li><a href="index.html"> Index</a></li>
+                            <li><a href="layout1.html"> Layout1</a></li>
+                            <li><a href="layout2.html"> Layout2</a></li>
+                            <li><a href="layout3.html"> Layout3</a></li>
+                            <li><a href="free_layout.html"> Free layout</a></li>
+                          
+                            <div class="clear"></div> <!--float left해제-->
+                        </ul>
+                    </header>
+
+            <nav>
+                    <h1 class="float_left"> 
+                        <img src="images/national-geographic-logo.png"/>
+                    </h1>
+                    <ul class="float_right">
+                        <li>HOME</li>
+                        <li>BRAND</li>
+                        <li>CHANNEL</li>
+                        <li>VIDEO</li>
+                        <li>NEWS</li>
+                        <li>MAGAZINES</li>
+                        <li>STORE</li>
+                        
+                        
+                        <div class="clear"></div> <!--float left해제-->  
+                    </ul>
+                    <div class="clear"></div> <!--float left해제-->
+                </nav>
+                <div id="content">
+                        <div >
+                            <section>
+                                <!--파란 박스 부분-->
+                                
+                            <div class="content_part">
+                                <!--왼편 부분-->
+                                <video width="1600px" height="1000px" controls>
+                                        <source src="./images/brand_ngc.mp4" type="video/mp4"/>
+                                    </video>
+                                <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+                                <dl>
+                                <dt><h6> WHAT WE DO </h6></dt>
+                                
+                                <p>우리는 지구상의 생명을 이해하고 소중히 여기며 보호하며 변화를 일으키는 대담한 사람들에게 변화하는 아이디어를 통해 영향을 미치도록 힘을 실어줍니다.<br/> 우리의 프로젝트를 탐색하세요.</p>
+                                </dl>
+                                <table summary="표 설명" class="text_target">
+    
+                                <tbody>
+                                    <tr>
+                                    <td> <img src="images/whatwedo1.jpg"/></td>
+                                    <td> <img src="images/whatwedo2.jpg"/></td>
+                                    <td> <img src="images/whatwedo3.jpg"/></td>   
+                                    </tr>
+                                </tbody>
+                                </table>
+    
+
+                                </div>
+                                </section>
+                                </div>
+                                </div>
+                                <div class="clear"></div> <!--float left해제--> 
+
+                    
+                                <dl>
+                                    <dt><h3> NEWS </h3></dt>
+                                    <dd><h4>프리솔로</h4>
+                                    </dd>
+                                    <p>맨몸으로 절벽을 오르는 등반가,알렉스 호놀드</p>
+                                </dl>
+                                <img src="images/NGCKOREA.jpg"/>
+                                <br/>  <br/>  <br/>
+                                <dl>
+                                    <dt><h3> WATCH </h3></dt>
+                                    <dd><h4>베어그릴스와 함께하는 오지 탐험</h4>
+                                    </dd>
+                                    <p>유명 생존자들은 세계의 가장 거친 지역으로 여행합니다. <br/>매주 화요일 새로운 에피소드.</p>
+                                </dl>
+                                <video width="1600px" height="1000px" controls autoplay loop>
+                                <source src="./images/channel.mp4" type="video/mp4"/>
+                                </video>
+                                
+                                <br/>  <br/>
+                                <dl>
+                                <dd><h5>NAT GEO ORIGIANLS</h5></dd>
+                                </dl>
+
+                            <table summary="표 설명" class="text_target">
+
+                            <tbody>
+                            <tr>
+                            <td> <img src="images/original1.jpg"/></td>
+                            <td> <img src="images/original2.jpg"/></td>
+                            <td> <img src="images/original3.jpg"/></td>
+                            <td> <img src="images/original4.jpg"/></td>
+                            <td> <img src="images/original5.jpg"/></td>      
+                            </tr>
+                            </tbody>
+                            </table>
+                            <br/>  <br/>  <br/>
+                            <img src="images/watch.jpg" />
+                            <br/>  <br/>  <br/>  <br/>
+
+                            <dl>
+                            <dt><h2> BRAND SHOP </h2></dt>
+                           
+                            <img src="images/apparel.jpg"/>
+                            <br/> 
+
+                            <div>
+                            <img src="images/shop.jpg" />
+                            </div>
+                            <br/> <br/> <br/> </dl>
+
+                    <footer>
+                        
+                            <div id="footer_left">
+                                    <ul>
+                                        <li>Index</li>
+                                        <li>Layout1</li>
+                                        <li>Layout2</li>
+                                        <li>Layout3</li>
+                                        <li>Free layout</li>
+                                    
+                                        <div class="clear"></div> <!--float left해제-->
+                                    </ul>
+                                    
+                                    <div>copyright ⓒ 2018 National Geographic. All Right Reserved.</div>
+                                    <div>the loges in the design are the property
+                                        of their respective owners/copyright holders.<br/>
+                                    </div>
+                                </div>
+                                <ul id="footer_right"><!--오른쪽 상자 역할 -->
+                                    <li><img src="images/layout1_footer_icon1.png"/></li>
+                                    <li><img src="images/layout1_footer_icon2.png"/></li>
+                                    <li><img src="images/layout1_footer_icon3.png"/></li>
+                                    <li><img src="images/layout1_footer_icon4.png"/></li>
+                                    <li><img src="images/layout1_footer_icon5.png"/></li>
+                                    <li><img src="images/layout1_footer_icon6.png"/></li>
+                                    <div class="clear"></div> <!--float left해제-->  
+                                </ul>
+                                <div class="clear"></div> <!--float left해제-->  <br/>
+                                    <div>계원예술대학교 디지털미디어디자인 콘텐츠프로그래밍 기말평가</div>
+                                    <div>21961052_박혜린</div>
+                    
+                            </div>
+                    </footer>
+        </body>
+        </html>

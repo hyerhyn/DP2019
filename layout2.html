@@ -11,10 +11,26 @@
             header{
                 background-color: #02918c;
                 color: white;
-                padding: 10px 50px; /*상하 좌우*/
+                padding: 10px 10px; /*상하 좌우*/
+            }
+            header ul>li{
+                float:left; /*둥둥떠다니게 :왼쪽기준 */
+                list-style:none; /*목록-모습(동그라미): 없음*/
+                padding-left:10px; /* 내부 여백-왼쪽:10px*/
+                padding-right:10px;/* 내부 여백-오른쪽:10px*/
+                border-right:solid 2px rgb(255, 213, 62)
+                /*경계선-오른쪽:실선 1px 두께 회색*/
+                
+                }
+                header>ul>li:nth-child(5){
+                    border:none; /*경계선: 없음*/
+                }
+                header>ul>li>a{
+                color: black;
+                text-decoration: none;
             }
             header>h1{
-                margin: 0px;
+                margin: 5px;
             }
             header>h1>span:nth-child(1){
                 color: white;
@@ -122,11 +138,69 @@
                 margin-left:auto;
                 margin-right:auto;
             }
+          
+            footer{
+                
+                color: black;
+
+                padding: 10px 50px;
+            }
+           
+            footer>div>ul>li{
+                float:left;
+                list-style: none;
+                padding:0px 10px; /* 상하 좌우 */
+
+               border-right: solid 2px white;
+            } 
+            footer>div>ul>li:nth-child(5){
+                border:none;
+            }
+            footer>div>ul{
+                padding:0px;
+            }
+            footer>ul>li{
+                float:left;
+                list-style: none;
+                padding:0px 10px;/*상하 좌우*/
+            }
+            footer>ul{
+                padding:0px;
+            }
+            #footer_left{
+                float: left;
+                
+            }
+            #footer_right{
+                float: right;
+            }
+            .clear{
+                clear:both; /*지우다: 양쪽*/
+                height: 0px;/* 높이: 0px*/
+                overflow: hidden; /*넘쳤을때: 숨김*/
+            }
+
+            
         </style>
 
 
     </head>
     <body>
+            <header>
+                    <h1 class="float_left">
+                   
+                    </h1>
+                    <ul >
+                            <li><a href="index.html"> Index</a></li>
+                            <li><a href="layout1.html"> Layout1</a></li>
+                            <li><a href="layout2.html"> Layout2</a></li>
+                            <li><a href="layout3.html"> Layout3</a></li>
+                            <li><a href="free_layout.html"> Free layout</a></li>
+                      
+                        <div class="clear"></div> <!--float left해제-->
+                    </ul>
+            </header>
+
         <div id="wrap">
             <header>
                 <h1 class="float_left">
@@ -229,6 +303,40 @@
 
 
         </div>
+        <footer>
+                   
+                <div id="footer_left">
+                        <ul>
+                            <li>Index</li>
+                            <li>Layout1</li>
+                            <li>Layout2</li>
+                            <li>Layout3</li>
+                            <li>Free layout</li>
+                        
+                            <div class="clear"></div> <!--float left해제-->
+                        </ul>
+                        
+                        <div>copyright ⓒ 2018 National Geographic. All Right Reserved.</div>
+                        <div>the loges in the design are the property
+                             of their respective owners/copyright holders.<br/>
+                        </div>
+                    </div>
+                    <ul id="footer_right"><!--오른쪽 상자 역할 -->
+                        <li><img src="images/layout1_footer_icon1.png"/></li>
+                        <li><img src="images/layout1_footer_icon2.png"/></li>
+                        <li><img src="images/layout1_footer_icon3.png"/></li>
+                        <li><img src="images/layout1_footer_icon4.png"/></li>
+                        <li><img src="images/layout1_footer_icon5.png"/></li>
+                        <li><img src="images/layout1_footer_icon6.png"/></li>
+                        <div class="clear"></div> <!--float left해제-->  
+                    </ul>
+                    <div class="clear"></div> <!--float left해제-->  <br/>
+                    <div>계원예술대학교 디지털미디어디자인 콘텐츠프로그래밍 기말평가</div>
+                    <div>21961052_박혜린</div>
+    
+                  
+            </footer>
+      
 
     </body>
 </html>
